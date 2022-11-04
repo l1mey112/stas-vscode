@@ -1,0 +1,25 @@
+{
+    "name": "stas-vscode",
+    "displayName": "stas-vscode",
+    "description": "stas lanugage support for VScode",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.73.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "stas",
+            "aliases": ["stas", "stas"],
+            "extensions": ["stas"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "stas",
+            "scopeName": "source.stas",
+            "path": "./syntaxes/stas.tmLanguage.json"
+        }]
+    }
+}
