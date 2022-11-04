@@ -2,7 +2,7 @@
 	"name": "stas-vscode",
 	"displayName": "stas",
 	"description": "stas Lanugage Support Extension for Visual Studio Code",
-	"publisher": "l-m.dev",
+	"publisher": "l-m",
 	"version": "0.0.1",
 	"license": "MIT",
 	"engines": {
