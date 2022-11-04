@@ -1,25 +1,54 @@
 {
-    "name": "stas-vscode",
-    "displayName": "stas-vscode",
-    "description": "stas lanugage support for VScode",
-    "version": "0.0.1",
-    "engines": {
-        "vscode": "^1.73.0"
-    },
-    "categories": [
-        "Programming Languages"
-    ],
-    "contributes": {
-        "languages": [{
-            "id": "stas",
-            "aliases": ["stas", "stas"],
-            "extensions": ["stas"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "stas",
-            "scopeName": "source.stas",
-            "path": "./syntaxes/stas.tmLanguage.json"
-        }]
-    }
+	"name": "stas-vscode",
+	"displayName": "stas",
+	"description": "stas Lanugage Support Extension for Visual Studio Code",
+	"publisher": "l-m.dev",
+	"version": "0.0.1",
+	"license": "MIT",
+	"engines": {
+		"vscode": "^1.40.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/l1mey112/stas-vscode"
+	},
+	"keywords": [
+		"stas",
+		"stas language",
+		"extension",
+		"autocompletion"
+	],
+	"categories": [
+		"Snippets",
+		"Programming Languages"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "stas",
+				"path": "snippets/snippets.json"
+			}
+		],
+		"languages": [
+			{
+				"id": "stas",
+				"aliases": [
+					"stas",
+					"stas"
+				],
+				"extensions": [
+					"stas",
+					".stas"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "stas",
+				"scopeName": "source.stas",
+				"path": "./syntaxes/stas.tmLanguage.json"
+			}
+		]
+	}
 }

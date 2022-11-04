@@ -1,0 +1,14 @@
+{
+	"snippet.unimpl": {
+		"body": ["0 assert -> 'unimplemented'"],
+		"description": "Code snippet for unimplemented assertation",
+		"prefix": "unimpl",
+		"scope": "stas"
+	},
+	"snippet.unreach": {
+		"body": ["0 assert -> 'unreachable'"],
+		"description": "Code snippet for unreachable assertation",
+		"prefix": "unreach",
+		"scope": "stas"
+	}
+}
