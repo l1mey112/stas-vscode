@@ -27,7 +27,7 @@
 				},
 				{
 					"name": "keyword.stas",
-					"match": "(?<!\\S)(fn|argc|argv|swap|dup|over|over2|rot|rot4|drop|w8|w16|w32|w64|r8|r16|r32|r64|syscall0|syscall1|syscall2|syscall3|syscall4|syscall5|syscall6|_breakpoint|assert|const|auto|reserve|pop|include)(?!\\S)"
+					"match": "(?<!\\S)(fn|argc|argv|swap|dup|over|over2|rot|rot4|drop|w8|w16|w32|w64|r8|r16|r32|r64|syscall0|syscall1|syscall2|syscall3|syscall4|syscall5|syscall6|_breakpoint|assert|const|auto|reserve|pop|include|addr)(?!\\S)"
 				}
 			]
 		},
@@ -54,6 +54,17 @@
 							"match": "\\\\."
 						}
 					]
+				},
+				{
+					"name": "string.literal.stas",
+					"begin": "`",
+					"end": "`",
+					"patterns": [
+						{
+							"name": "constant.character.escape.stas",
+							"match": "\\\\."
+						}
+					]
 				}
 			]
 		},
@@ -64,7 +75,7 @@
 		},
 		"numbers": {
 			"name": "constant.numeric.integer.stas",
-			"match": "(?<!\\S)(\\d+)(?!\\S)"
+			"match": "(?<!\\S)\\-?(\\d+)(?!\\S)"
 		},
 		"operators": {
 			"patterns": [
